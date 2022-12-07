@@ -1,1 +1,15 @@
 <p>todo-categories works!</p>
+<h4> create a new category to start :</h4>
+<div *ngFor="let category of categories" class="mr-2 ml-2 mt-2 mb-2 ">
+   <mat-card>
+       {{category.name}}
+
+       <div style="float: left;">
+        <button mat-icon-button  class="exemple-icon favorite-icon" position="end"  (click)="editCategory(category.id)">
+              <mat-icon>edit</mat-icon>
+        </button>
+      </div>
+   </mat-card>
+      
+    
+</div>

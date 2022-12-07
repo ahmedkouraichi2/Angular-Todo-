@@ -15,11 +15,23 @@ import { TodoHeaderComponent } from './todo-header/todo-header.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { TodoMenuComponent } from './todo-menu/todo-menu.component';
-
-
 import { MatListModule } from '@angular/material/list';
+import { HttpClientModule } from '@angular/common/http';
 
+
+
+//angular materail 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { TodoAlertComponent } from './todo-alert/todo-alert.component';
+import { FormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
+
+
+
 
 
 
@@ -36,16 +48,30 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     TodoFooterComponent,
     TodoHeaderComponent,
     TodoListComponent,
-    TodoMenuComponent
+    TodoMenuComponent,
+    TodoAlertComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
+    MatFormFieldModule,
+    FormsModule,
+    
 
+
+    //Angular materail
+
+  
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule,
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule
+
+
 
   ],
   providers: [],
