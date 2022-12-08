@@ -26,25 +26,25 @@ export class CreateCategoriesComponent  implements OnInit{
      }
 
 
-     cancel(){
+     cancel(){}
 
-  
-  
-    savecategory(){
 
-    }
-     
-   
+
+    savecategory(){}
+
+
+
+
 
   }
 
 
- 
- 
 
 
 
- 
 
 
-   
+
+
+
+

@@ -1,1 +1,45 @@
-<p>todo-list works!</p>
+<div *ngIf="true">
+
+    <h4>NO todos founds </h4>
+    <h4> Create a new Category to start :-) !</h4>
+
+</div>
+
+
+
+
+
+<div class="mt-2 mr-2 mr-2 ml-2 ">
+   <mat-accordion class="exmple-headers-align" multi>
+     
+     <mat-expansion-panel>
+          <mat-expansion-panel-header>
+                <mat-panel-title>
+                  name-category
+                </mat-panel-title> 
+
+                <mat-panel-description>
+                     category-desciption
+                </mat-panel-description>
+        </mat-expansion-panel-header>
+
+
+         <!--    <div *ngFor="let todo of category.todoList"> -->
+            <div >
+                <app-todo-element></app-todo-element>
+            </div>
+
+             
+     </mat-expansion-panel>
+    
+    
+         
+
+       <mat-panel-description>
+          category desciption
+          <label>category.todolist.length</label>
+       </mat-panel-description>
+      
+        
+   </mat-accordion>   
+</div>

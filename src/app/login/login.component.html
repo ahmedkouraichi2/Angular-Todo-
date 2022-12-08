@@ -1,1 +1,45 @@
-<p>login works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+
+        </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div class="mb-2">
+            <app-todo-alert>
+
+            </app-todo-alert>
+        </div>
+
+        <form class="exmple-form">
+            <mat-form-field class="exmple-full-width">
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="email"  name="email" [(ngModel)]="userDto">
+            </mat-form-field>
+
+
+            <mat-form-field class="exmple-full-width">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="password"  name="password">
+              <button mat-icon-button matSuffix (click)="hide =!hide"  [attr.aria-label]="'Hide password'" [(ngModel)]="userDto.password">
+                <mat-icon>{{hide? 'visibility_off':'visibility'}}</mat-icon>
+
+              </button>
+        </mat-form-field>
+        </form>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-raised-button color="primary" class="example-icon" (click)="login()">
+           login
+        </button>
+        <button mat-raised-button color="primary" class="example-icon">
+          Subscribe
+        </button>
+
+       
+
+
+    </mat-card-actions>
+</mat-card>

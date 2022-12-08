@@ -28,6 +28,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { TodoAlertComponent } from './todo-alert/todo-alert.component';
 import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { TodoElementComponent } from './todo-element/todo-element.component';
 
 
 
@@ -49,7 +51,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     TodoHeaderComponent,
     TodoListComponent,
     TodoMenuComponent,
-    TodoAlertComponent
+    TodoAlertComponent,
+    TodoElementComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +61,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatSidenavModule,
     MatFormFieldModule,
     FormsModule,
+    MatExpansionModule,
     
 
 
