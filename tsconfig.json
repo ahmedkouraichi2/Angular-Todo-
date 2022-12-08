@@ -2,6 +2,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+
+
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -15,6 +17,7 @@
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "strictPropertyInitialization": false,
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",

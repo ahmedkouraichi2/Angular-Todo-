@@ -30,6 +30,7 @@ import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { TodoElementComponent } from './todo-element/todo-element.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 
@@ -52,7 +53,8 @@ import { TodoElementComponent } from './todo-element/todo-element.component';
     TodoListComponent,
     TodoMenuComponent,
     TodoAlertComponent,
-    TodoElementComponent
+    TodoElementComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
